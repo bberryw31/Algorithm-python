@@ -2,9 +2,8 @@ import random
 
 def selectionsort(list):
     for i in range(len(list)):
+        min = list[i]
         for j in range(i, len(list)):
-            if j == i:
-                min = list[j]
             if list[j] <= min:
                 min = list[j]
                 minorder = j
