@@ -12,12 +12,6 @@ def bubblesort(list):
             if list[j-1] > list[j]:
                 list[j-1], list[j] = list[j], list[j-1]
 
-def compare(list, list2):
-    if list == list2:
-        return True
-    else:
-        return False
-
 length = int(input())
 list = randomlist(length)
 list2=[]
