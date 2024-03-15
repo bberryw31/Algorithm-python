@@ -5,17 +5,15 @@ for i in range(int(T)):
     a = ao%10
     x = a
     list = []
-    list.append(x)
-    for j in range(b-1):
+    while x not in list:
+        list.append(x)
         x = (x * a)%10
-        if x not in list:
-            list.append(x)
-        else:
-            break
-
     y = b%len(list)
-    if y > 0:
-        print(list[y-1])
+    if 0 in list:
+        print(10)
     else:
-        print(list[len(list)-1])
+        if y > 0:
+            print(list[y-1])
+        else:
+            print(list[len(list)-1])
 
