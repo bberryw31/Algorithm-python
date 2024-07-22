@@ -22,7 +22,7 @@ class Solution:
             it.next = list2
         return result.next
 
-    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+    def mergeKLists(self, lists: list[Optional[ListNode]]) -> Optional[ListNode]:
         k = len(lists)
         if k == 0:
             return None
