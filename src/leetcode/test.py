@@ -1,11 +1,27 @@
-from typing import Optional
+from typing import Optional, List
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 class Solution:
-    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        print(list1.val)
-        return self
-s = Solution()
-s.mergeTwoLists([1,2,4],[1,3,4])
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        for l in lists:
+            if l:  # check if the ListNode is not None
+                print(l.val)
+            else:
+                print(None)
+
+# Example usage:
+# Create the linked lists manually
+node1 = ListNode(1)
+node2 = ListNode(2)
+node3 = ListNode(3)
+node2.next = node3
+
+lists = [node1, None, None, node2]
+
+# Instantiate the Solution class
+solution = Solution()
+solution.mergeKLists(lists)
