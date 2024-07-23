@@ -1,24 +1,12 @@
-class Solution:
-    def lengthOfLongestSubstring(self, s: str) -> int:
-        s1,l = [],[]
-        s1.extend(s)
-        maxlen = 0
-        while s1:
-            if not l:
-                l.append(s1.pop(0))
-            else:
-                if s1[0] not in l:
-                    l.append(s1.pop(0))
-                else:
-                    if len(l)>maxlen:
-                        maxlen = len(l)
-                    k = l.index(s1[0])
-                    if k == len(l)-1:
-                        l = []
-                    else:
-                        l = l[k+1:]
-                    l.append(s1.pop(0))
-        return maxlen
-
-solution = Solution()
-print(solution.lengthOfLongestSubstring("abcabcbb"))
+nums1 = [1,2]
+nums2 = [3,4]
+m,n = len(nums1),len(nums2)
+o = m+n
+i = 0
+while i<o//2+1 and nums1 and nums2:
+    if nums1[0]<nums2[0]:
+        del nums1[0]
+    else:
+        del nums2[0]
+    i+=1
+if nums1 and nums2:
