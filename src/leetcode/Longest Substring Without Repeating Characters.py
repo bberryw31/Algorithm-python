@@ -18,7 +18,6 @@ class Solution:
                     else:
                         l = l[k+1:]
                     l.append(s1.pop(0))
+            if len(l)>maxlen:
+                maxlen = len(l)
         return maxlen
-
-solution = Solution()
-print(solution.lengthOfLongestSubstring("abcabcbb"))
