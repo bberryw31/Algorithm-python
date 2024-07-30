@@ -1,1 +1,7 @@
-nums1 = [1,2,3,4,5,6,7]
+a = "a"
+a = a[1:]
+try:
+    if a[1] == "":
+        print(1)
+except:
+    print(0)
