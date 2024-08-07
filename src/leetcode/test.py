@@ -4,4 +4,4 @@ try:
     if a[1] == "":
         print(1)
 except:
-    print(0) 
+    print(0)
