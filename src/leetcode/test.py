@@ -1,7 +1,3 @@
-a = "a"
-a = a[1:]
-try:
-    if a[1] == "":
-        print(1)
-except:
-    print(0) 
+nums = [0,1,2,3,4]
+nums2 = [i for i in range(len(nums))]
+print(nums2)
