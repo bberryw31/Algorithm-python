@@ -1,4 +1,3 @@
-num = 1234
-l = []
-l.extend(num)
-print(l)
+haystack = "haystack"
+for h in haystack:
+    print(h)
